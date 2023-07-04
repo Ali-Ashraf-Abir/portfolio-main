@@ -21,20 +21,20 @@ const Navbar = () => {
     return (
         <div>
             <div className="flex w-[100%]  border-b-2 border-[rgb(255,255,255,0.1)] text-[2.5vh] font-nunito">
-                <div className="lg:basis-1/3 basis-2/3 text-center p-6 cursor-pointer text-3xl">
+                <div className="lg:basis-1/3 basis-2/3 border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 cursor-pointer text-[3vh]">
                     Portfolio
                 </div>
-                <div className="hidden lg:text-xl lg:basis-1/3 border-l-2 border-[rgb(255,255,255,0.1)] justify-center p-6 lg:flex">
+                <div className="hidden lg:text-[3vh] lg:basis-1/3 border-l-2 border-[rgb(255,255,255,0.1)] justify-center p-6 lg:flex">
                     <p className="cursor-pointer">About me</p>
                     <p className="ml-[5vh] cursor-pointer">Contact me</p>
                 </div>
-                <div className="hidden lg:text-xl flex grow border-l-2 border-[rgb(255,255,255,0.1)] justify-center p-6 lg:flex">
+                <div className="hidden lg:text-[3vh] flex grow border-l-2 border-[rgb(255,255,255,0.1)] justify-center p-6 lg:flex">
                     <FaFacebook className="cursor-pointer"></FaFacebook> <FaLinkedinIn className="ml-[3vh] cursor-pointer"></FaLinkedinIn> <FaMailchimp className="ml-[3vh] cursor-pointer"></FaMailchimp>
                 </div>
-                <div className="lg:text-xl grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 hidden lg:block">
+                <div className="lg:text-[3vh] grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 hidden lg:block">
                     <p className="cursor-pointer">Download CV</p>
                 </div>
-                <div onClick={handleMenu} className=" text-3xl grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 flex justify-center items-center lg:hidden">
+                <div onClick={handleMenu} className=" text-[3vh] grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 flex justify-center items-center lg:hidden">
                     <FaHamburger></FaHamburger>
                     <p className="cursor-pointer ml-[3vh] ">Menu</p>
                 </div>
