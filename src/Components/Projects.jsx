@@ -44,7 +44,7 @@ const Projects = () => {
             <div  className=" text-center text-[6vh] p-4 border-b-2 border-l-2 border-r-2 border-[rgb(255,255,255,0.1)]">My Projects</div>
                 <div className="text-center"><progress className="progress progress-primary w-56" value={active==1?'33':active==2?'66':active==3?'100':'0'} max="100"></progress></div>
             <div  className={`bg-[#050a18] h-[100%] w-[100%] grid lg:grid-cols-[2fr,1fr] lg:grid-rows-[2fr,1fr] grid-cols-1 grid-rows-[0.7fr,1fr,0.5fr,0.5fr] ${active==1?'block':'hidden'}`}>
-                <a  href="https://melodic-adventures.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('Capture.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
+                <a  href="https://melodic-adventures.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('/Capture.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
                   
                 </div></a>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] ">
@@ -90,7 +90,7 @@ const Projects = () => {
 
             {/* 2nd project */}
             <div className={`bg-[#050a18] h-[100%] w-[100%] grid lg:grid-cols-[2fr,1fr] lg:grid-rows-[2fr,1fr] grid-cols-1 grid-rows-[0.7fr,1fr,0.5fr,0.5fr] ${active==2?'block translate-x-0':'hidden -translate-x-11'}`}>
-                <a  href="https://gaming-galaxy-e5eb6.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('Capture2.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
+                <a  href="https://gaming-galaxy-e5eb6.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('/Capture2.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
                   
                 </div></a>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] ">
@@ -135,7 +135,7 @@ const Projects = () => {
 
             {/* 3rd project */}
             <div className={`bg-[#050a18] h-[100%] w-[100%] grid lg:grid-cols-[2fr,1fr] lg:grid-rows-[2fr,1fr] grid-cols-1 grid-rows-[0.7fr,1fr,0.5fr,0.5fr] ${active==3?'block':'hidden'}`}>
-                <a  href="https://italian-foodies.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('Capture3.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
+                <a  href="https://italian-foodies.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('/Capture3.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
                   
                 </div></a>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] ">

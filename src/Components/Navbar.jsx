@@ -38,7 +38,7 @@ const Navbar = () => {
                     <a href="https://www.facebook.com/ashraf.abir.520/" target='_blank'><FaFacebook className="cursor-pointer"></FaFacebook></a> <a href="https://www.linkedin.com/in/ali-ashraf-722612278/" target='_blank'><FaLinkedinIn className="ml-[3vh] cursor-pointer"></FaLinkedinIn></a> <div className="tooltip tooltip-open tooltip-bottom text-[4vh]" data-tip="Email:aliashrafabir19@gmail.com"><FaMailchimp className="ml-[3vh] cursor-pointer"></FaMailchimp></div> 
                 </div>
                 <div className="lg:text-[3vh] grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 hidden lg:block">
-                    <p className="cursor-pointer">Download CV</p>
+                <a href='/resume.pdf'><p className="cursor-pointer">Download CV</p></a>
                 </div>
                 <div onClick={handleMenu} className=" text-[3vh] grow border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 flex justify-center items-center lg:hidden">
                     <FaHamburger></FaHamburger>
@@ -52,14 +52,14 @@ const Navbar = () => {
             </div>
             <div className={`sidemenu flex flex-col justiy-center ${menu?'block':'hidden'}`}>
                     <div className=" flex lg:basis-1/3 border-b-2 border-[rgb(255,255,255,0.1)] justify-center p-6 ">
-                        <p className="cursor-pointer">About me</p>
-                        <p className="ml-[5vh] cursor-pointer">Contact me</p>
+                    <p onClick={handleAbout} className="cursor-pointer">About me</p>
+                        <Link to="Contact" spy={true} smooth={true} offset={50} duration={500} className="ml-[5vh] cursor-pointer">Contact me</Link>
                     </div>
                     <div className=" flex grow border-b-2 border-[rgb(255,255,255,0.1)] justify-center p-6">
                         <FaFacebook className="cursor-pointer"></FaFacebook> <FaLinkedinIn className="ml-[3vh] cursor-pointer"></FaLinkedinIn> <FaMailchimp className="ml-[3vh] cursor-pointer"></FaMailchimp>
                     </div>
                     <div className=" grow border-b-2 border-[rgb(255,255,255,0.1)] text-center p-6 block">
-                        <p className="cursor-pointer">Download CV</p>
+                        <a href='/resume.pdf'><p className="cursor-pointer">Download CV</p></a>
                     </div>
                 </div>
         </div>

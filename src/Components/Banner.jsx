@@ -37,9 +37,9 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="grow border-b-2 border-l-2 border-[rgb(255,255,255,0.1)]">
+                <div className="basis-1/3 border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url(/pic.jpg)] bg-cover bg-contain no-repeat bg-center">
 
-                        <img className='w-[100%] h-[100%]' src="https://images.unsplash.com/photo-1578997864329-d747473f7359?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" />
+                        {/* <img className='w-[100%] mt-auto' src="pic.jpg" alt="" /> */}
 
 
                 </div>
