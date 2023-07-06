@@ -1,7 +1,9 @@
 import Banner from "./Banner";
+import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Skills1 from "./Skills1";
 
 
 const Home = () => {
@@ -11,6 +13,8 @@ const Home = () => {
             <Banner></Banner>
             <Projects></Projects>
             <Skills></Skills>
+            <Skills1></Skills1>
+            <Contact></Contact>
         </div>
     );
 };

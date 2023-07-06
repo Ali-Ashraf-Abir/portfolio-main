@@ -40,7 +40,9 @@ const Projects = () => {
 
     return (
         <div data-aos="fade-right"  data-aos-duration="1500" id='1' className="font-josef overflow-hidden">
+            
             <div  className=" text-center text-[6vh] p-4 border-b-2 border-l-2 border-r-2 border-[rgb(255,255,255,0.1)]">My Projects</div>
+                <div className="text-center"><progress className="progress progress-primary w-56" value={active==1?'33':active==2?'66':active==3?'100':'0'} max="100"></progress></div>
             <div  className={`bg-[#050a18] h-[100%] w-[100%] grid lg:grid-cols-[2fr,1fr] lg:grid-rows-[2fr,1fr] grid-cols-1 grid-rows-[0.7fr,1fr,0.5fr,0.5fr] ${active==1?'block':'hidden'}`}>
                 <a  href="https://melodic-adventures.web.app/" target="_blank"><div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] bg-[url('Capture.PNG')] lg:bg-cover bg-contain bg-no-repeat h-[100%] w-[100%] cursor-pointer ">
                   
