@@ -11,7 +11,7 @@ const Skills = () => {
 
     })
     const opacity = useTransform(scrollYProgress, [0, 0.25], [1, 0])
-    const opacity2 = useTransform(scrollYProgress, [0.1, 0.2,0.5,0.7,0.8], [0.3, 1,1,1,0])
+    const opacity2 = useTransform(scrollYProgress, [0.1, 0.2,0.5,0.6,0.7], [0.3, 1,1,1,0])
     const scale = useTransform(scrollYProgress, [0, 0.25], [1, 0.4])
     const scale2 = useTransform(scrollYProgress, [0.1, 0.2], [0, 1])
     const translatey= useTransform(scrollYProgress, [0.2, 0.3], [0, 0])
@@ -30,7 +30,7 @@ const Skills = () => {
     return (
         <div className="bg-[#050a18] relative">
 
-            <div ref={targetRef} className="relative h-[500vh] ">
+            <div ref={targetRef} className="relative h-[500vh] font-josef">
                 <motion.div style={{ opacity, scale }} className=" sticky text-center top-[50%] text-[7vh] border-b-2 border-[rgb(255,255,255,0.1)]">
                     My Skills
                 </motion.div>
@@ -95,7 +95,7 @@ const Skills = () => {
                 </motion.div>
                  */}
 
-                <div className="text-center lg:mt-[80vh] mt-[50vh]">
+                <div className="text-center lg:mt-[80vh] mt-[50vh] font-josef">
                 <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially

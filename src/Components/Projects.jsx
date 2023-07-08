@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-scroll';
 const Projects = () => {
 
     const [active,setActive]=useState(1)
@@ -72,16 +73,16 @@ const Projects = () => {
                 </div>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] flex justify-around items-center text-[5vh]">
                     <div className="basis-1/2 text-center">
-                    <a href={`#1`}>   <button onClick={handleActiveLeft}>
+                    <Link to="1" spy={true} smooth={true} offset={50} duration={500}>   <button onClick={handleActiveLeft}>
                             <FaArrowLeft></FaArrowLeft>
-                        </button></a>
+                        </button></Link>
                     </div>
                     <div className=" grow text-center h-[100%] flex justify-center items-center border-l-2 border-[rgb(255,255,255,0.1)]">
-                     <a href={`#1`}>
+                     <Link to="1" spy={true} smooth={true} offset={50} duration={500}>
                      <button onClick={handleActiveRight}>
                             <FaArrowRight></FaArrowRight>
                         </button>
-                     </a>
+                     </Link>
                     </div>
                 </div>
 
@@ -117,16 +118,16 @@ const Projects = () => {
                 </div>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] flex justify-around items-center text-[5vh]">
                 <div className="basis-1/2 text-center">
-                    <a href={`#1`}>   <button onClick={handleActiveLeft}>
+                <Link to="1" spy={true} smooth={true} offset={50} duration={500}>   <button onClick={handleActiveLeft}>
                             <FaArrowLeft></FaArrowLeft>
-                        </button></a>
+                        </button></Link>
                     </div>
                     <div className=" grow text-center h-[100%] flex justify-center items-center border-l-2 border-[rgb(255,255,255,0.1)]">
-                     <a href={`#1`}>
+                     <Link to="1" spy={true} smooth={true} offset={50} duration={500}>
                      <button onClick={handleActiveRight}>
                             <FaArrowRight></FaArrowRight>
                         </button>
-                     </a>
+                     </Link>
                     </div>
                 </div>
 
@@ -161,16 +162,16 @@ const Projects = () => {
                 </div>
                 <div className="border-b-2 border-l-2 border-[rgb(255,255,255,0.1)] flex justify-around items-center text-[5vh]">
                 <div className="basis-1/2 text-center">
-                    <a href={`#1`}>   <button onClick={handleActiveLeft}>
+                    <Link to="1" spy={true} smooth={true} offset={50} duration={500}>   <button onClick={handleActiveLeft}>
                             <FaArrowLeft></FaArrowLeft>
-                        </button></a>
+                        </button></Link>
                     </div>
                     <div className=" grow text-center h-[100%] flex justify-center items-center border-l-2 border-[rgb(255,255,255,0.1)]">
-                     <a href={`#1`}>
+                     <Link to="1" spy={true} smooth={true} offset={50} duration={500}>
                      <button onClick={handleActiveRight}>
                             <FaArrowRight></FaArrowRight>
                         </button>
-                     </a>
+                     </Link>
                     </div>
                 </div>
 
