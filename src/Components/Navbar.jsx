@@ -26,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div id='nav' className="flex w-[100%]  border-b-2 border-[rgb(255,255,255,0.1)] text-[2.5vh] font-nunito">
+            <div id='nav' className="cursor-none flex w-[100%]  border-b-2 border-[rgb(255,255,255,0.1)] text-[2.5vh] font-nunito">
                 <div className="lg:basis-1/3 basis-2/3 border-l-2 border-[rgb(255,255,255,0.1)] text-center p-6 cursor-pointer text-[3vh]">
                     Portfolio
                 </div>

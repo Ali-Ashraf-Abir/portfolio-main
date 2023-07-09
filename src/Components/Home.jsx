@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import Banner from "./Banner";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
@@ -14,6 +14,7 @@ const Home = () => {
         x:0,
         y:0
     })
+
 
     useEffect(()=>{
 
@@ -33,6 +34,16 @@ const Home = () => {
 
 
     },[])
+
+
+    const targetRef=useRef(null)
+    const {scrollYProgress}=useScroll({
+        target:targetRef,
+        offset:["start end","end start"]
+
+    })
+
+    const opacity = useTransform(scrollYProgress, [0.1, 0.11], [1,0])
 
 
     const [mouseVariants,setMouseVariants]=useState('default')
@@ -64,11 +75,11 @@ const Home = () => {
 
     return (
         <div className=" bg-[#050a18] h-[100%] w-[100%] ">
-            <motion.div className="rounded-[50%] bg-white h-[30px] w-[30px] fixed z-[100] pointer-events-none" variants={variants} animate={mouseVariants}>
+            <motion.div style={{opacity:opacity}} className="rounded-[50%] bg-white h-[30px] w-[30px] fixed z-[100] pointer-events-none" variants={variants} animate={mouseVariants}>
 
             </motion.div>
             <Navbar></Navbar>
-            <Banner
+            <Banner  ref={targetRef}
             textEnter={textEnter}
             textLeave={textLeave}
             ></Banner>
